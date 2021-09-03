@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: cluster-addons
+  name: kubeflow
 spec:
   generators:
   - git:
       repoURL: https://github.com/kubeflow/manifests.git
       revision: HEAD
       directories:
-      - path: ./apps/jupyter/*
+      - path: apps/jupyter/*
   template:
     metadata:
       name: '{{path.basename}}'
