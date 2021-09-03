@@ -8,7 +8,7 @@ spec:
       repoURL: https://github.com/kubeflow/manifests.git
       revision: HEAD
       directories:
-      - path: apps/jupyter/jupyter-web-app/upstream/base/*
+      - path: apps/jupyter/jupyter-web-app/upstream/*
   template:
     metadata:
       name: '{{path.basename}}'
@@ -20,4 +20,4 @@ spec:
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path.basename}}'
+        namespace: 'kubeflow'
