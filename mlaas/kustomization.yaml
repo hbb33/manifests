@@ -2,4 +2,30 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- ../argocd-apps
+- ../argocd-apps/cert-manager.yaml
+- ../argocd-apps/kubeflow-issuer.yaml
+- ../argocd-apps/istio-crds.yaml
+- ../argocd-apps/istio-namespace.yaml
+- ../argocd-apps/istio-install.yaml
+- ../argocd-apps/oidc-authservice.yaml
+- ../argocd-apps/dex.yaml
+- ../argocd-apps/knative-serving.yaml
+- ../argocd-apps/knative-eventing.yaml
+- ../argocd-apps/istio-cluster-local-gateway.yaml
+- ../argocd-apps/kubeflow-namespace.yaml
+- ../argocd-apps/kubeflow-roles.yaml
+- ../argocd-apps/kubeflow-istio-resources.yaml
+- ../argocd-apps/kubeflow-pipeline.yaml
+- ../argocd-apps/kfserving.yaml
+- ../argocd-apps/katib-with-kubeflow.yaml
+- ../argocd-apps/centraldashboard.yaml
+- ../argocd-apps/admission-webhook.yaml
+- ../argocd-apps/jupyter-web-app.yaml
+- ../argocd-apps/notebook-controller.yaml
+- ../argocd-apps/profiles-kfam.yaml
+- ../argocd-apps/volumes-web-app.yaml
+- ../argocd-apps/tensorboard-controller.yaml
+- ../argocd-apps/tensorboards-web-app.yaml
+- ../argocd-apps/training-operator.yaml
+- ../argocd-apps/mpi-operator.yaml
+- ../argocd-apps/user-namespace.yaml
