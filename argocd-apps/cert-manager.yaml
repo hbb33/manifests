@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/hbb33/manifests.git
     targetRevision: HEAD
-    path: ./common/cert-manager/cert-manager/base
+    path: ../common/cert-manager/cert-manager/base
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
