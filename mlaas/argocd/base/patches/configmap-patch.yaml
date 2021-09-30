@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
+namespace: argocd
 metadata:
   name: argocd-cm
-  namespace: argocd
   resource.customizations: |
     admissionregistration.k8s.io/MutatingWebhookConfiguration:
       ignoreDifferences: |
