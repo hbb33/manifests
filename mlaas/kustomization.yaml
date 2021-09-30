@@ -29,3 +29,5 @@ resources:
 - argocd-apps/training-operator.yaml
 - argocd-apps/mpi-operator.yaml
 - argocd-apps/user-namespace.yaml
+patchesStrategicMerge:
+- patches/configmap-patch.yaml
