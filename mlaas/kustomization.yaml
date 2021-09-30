@@ -1,9 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-  - argocd/base
   
 resources:
+- argocd-apps/argocd.yaml
 - argocd-apps/cert-manager.yaml
 - argocd-apps/kubeflow-issuer.yaml
 - argocd-apps/istio-crds.yaml
