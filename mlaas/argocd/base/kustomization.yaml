@@ -6,4 +6,4 @@ resources:
 - namespace.yaml
 
 patchesStrategicMerge:
-- patches/configmap-patch.yaml
+- patches/argocd-cm.yaml
