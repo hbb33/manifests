@@ -31,3 +31,9 @@ data:
       ignoreDifferences: |
         jsonPointers:
         - /spec/scope
+ignoreDifferences:
+  - kind: ClusterRole
+    conditions:
+     - /aggregationRule is defined
+    jsonPointers:
+    - /rules
