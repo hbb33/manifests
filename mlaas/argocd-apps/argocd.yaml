@@ -9,6 +9,7 @@ spec:
     repoURL: https://github.com/hbb33/manifests.git
     targetRevision: HEAD
     path: mlaas/argocd/base
+    kustomize:
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
