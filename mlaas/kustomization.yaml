@@ -9,6 +9,7 @@ resources:
 - argocd-apps/istio-namespace.yaml
 - argocd-apps/istio-install.yaml
 - argocd-apps/oidc-authservice.yaml
+- argocd-apps/oidc-authservice-overlay.yaml
 - argocd-apps/dex.yaml
 - argocd-apps/knative-serving.yaml
 - argocd-apps/knative-eventing.yaml
