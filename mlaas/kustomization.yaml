@@ -20,7 +20,8 @@ resources:
 - argocd-apps/kubeflow-pipeline.yaml
 - argocd-apps/kfserving.yaml
 - argocd-apps/katib-with-kubeflow.yaml
-- argocd-apps/centraldashboard.yaml
+# - argocd-apps/centraldashboard.yaml
+- argocd-apps/centraldashboard-mlaas.yaml
 - argocd-apps/admission-webhook.yaml
 - argocd-apps/jupyter-web-app.yaml
 - argocd-apps/notebook-controller.yaml
