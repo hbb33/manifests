@@ -2,6 +2,8 @@ apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:
   name: kubeflow-gateway
+  labels:
+    app.kubernetes.io/name: kubeflow-istio-resources
 spec:
   selector:
     istio: ingressgateway
