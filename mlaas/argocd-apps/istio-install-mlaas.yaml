@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/hbb33/manifests.git
     targetRevision: HEAD
-    path: mlaas/istio-install
+    path: mlaas/istio
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
