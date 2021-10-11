@@ -8,6 +8,7 @@ resources:
 - argocd-apps/istio-crds.yaml
 - argocd-apps/istio-namespace.yaml
 - argocd-apps/istio-install.yaml
+- istio/patched/kustomization.yaml
 # - argocd-apps/oidc-authservice.yaml
 - argocd-apps/oidc-authservice-overlay.yaml
 - argocd-apps/dex.yaml
