@@ -8,7 +8,8 @@ resources:
 - argocd-apps/istio-crds.yaml
 - argocd-apps/istio-namespace.yaml
 - argocd-apps/istio-install.yaml
-- istio/patched/kustomization.yaml
+# Add https to istio gateway to avoid error Could not find CSRF cookie XSRF-TOKEN in the request 5803
+- istio/patches/kustomization.yaml
 # - argocd-apps/oidc-authservice.yaml
 - argocd-apps/oidc-authservice-overlay.yaml
 - argocd-apps/dex.yaml
