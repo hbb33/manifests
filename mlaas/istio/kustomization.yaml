@@ -3,5 +3,5 @@ kind: Kustomization
 bases:
 - ../../common/istio-1-9/istio-install/base
 patchesStrategicMerge:
-- patches/https-gateway.yaml
+# - patches/https-gateway.yaml
 - patches/certificate.yaml
