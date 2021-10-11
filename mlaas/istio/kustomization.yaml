@@ -4,5 +4,5 @@ bases:
 - ../../common/istio-1-9/istio-install/base
 - certificate.yaml
 patchesStrategicMerge:
-- patches/https-gateway.yaml
+# - patches/https-gateway.yaml
 
