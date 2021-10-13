@@ -10,6 +10,9 @@ spec:
       number: 80
       name: http
       protocol: HTTP
+    # Upgrade HTTP to HTTPS
+    tls:
+      httpsRedirect: true
     hosts:
     - "*"
   - hosts:
