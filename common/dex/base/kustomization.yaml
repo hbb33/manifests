@@ -4,7 +4,7 @@ namespace: auth
 resources:
 - namespace.yaml
 - config-map.yaml
-- crds.yaml
+# - crds.yaml
 - deployment.yaml
 - service.yaml
 generatorOptions:
