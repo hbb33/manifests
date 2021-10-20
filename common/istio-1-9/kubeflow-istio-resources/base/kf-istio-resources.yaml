@@ -10,7 +10,13 @@ spec:
       number: 80
       name: http
       protocol: HTTP
-    # Upgrade HTTP to HTTPS
+    tls:
+      httpsRedirect: true
     hosts:
     - "*"
-
+    port:
+      name: https
+      number: 443
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
