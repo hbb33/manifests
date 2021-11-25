@@ -7,10 +7,10 @@ metadata:
     component: "alertmanager"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
+    chart: prometheus-14.12.0
     heritage: Helm
   name: prometheus-alertmanager
-  namespace: prometheus
+  namespace: istio-system
 spec:
   selector:
     matchLabels:
@@ -24,13 +24,13 @@ spec:
         component: "alertmanager"
         app: prometheus
         release: prometheus
-        chart: prometheus-14.11.1
+        chart: prometheus-14.12.0
         heritage: Helm
     spec:
       serviceAccountName: prometheus-alertmanager
       containers:
         - name: prometheus-alertmanager
-          image: "quay.io/prometheus/alertmanager:v0.21.0"
+          image: "quay.io/prometheus/alertmanager:v0.23.0"
           imagePullPolicy: "IfNotPresent"
           env:
             - name: POD_IP

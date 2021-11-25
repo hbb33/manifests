@@ -16,4 +16,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: prometheus-kube-state-metrics
-  namespace: prometheus
+  namespace: istio-system

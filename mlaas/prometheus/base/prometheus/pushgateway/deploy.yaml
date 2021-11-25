@@ -7,10 +7,10 @@ metadata:
     component: "pushgateway"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
+    chart: prometheus-14.12.0
     heritage: Helm
   name: prometheus-pushgateway
-  namespace: prometheus
+  namespace: istio-system
 spec:
   selector:
     matchLabels:
@@ -24,7 +24,7 @@ spec:
         component: "pushgateway"
         app: prometheus
         release: prometheus
-        chart: prometheus-14.11.1
+        chart: prometheus-14.12.0
         heritage: Helm
     spec:
       serviceAccountName: prometheus-pushgateway

@@ -4,7 +4,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: prometheus-kube-state-metrics
-  namespace: prometheus
+  namespace: istio-system
   labels:
     app.kubernetes.io/name: kube-state-metrics
     helm.sh/chart: "kube-state-metrics-3.5.2"

@@ -7,10 +7,10 @@ metadata:
     component: "node-exporter"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
+    chart: prometheus-14.12.0
     heritage: Helm
   name: prometheus-node-exporter
-  namespace: prometheus
+  namespace: istio-system
 spec:
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
         component: "node-exporter"
         app: prometheus
         release: prometheus
-        chart: prometheus-14.11.1
+        chart: prometheus-14.12.0
         heritage: Helm
     spec:
       serviceAccountName: prometheus-node-exporter

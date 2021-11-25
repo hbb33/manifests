@@ -7,10 +7,10 @@ metadata:
     component: "server"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
+    chart: prometheus-14.12.0
     heritage: Helm
   name: prometheus-server
-  namespace: prometheus
+  namespace: istio-system
 data:
   alerting_rules.yml: |
     {}
@@ -300,7 +300,7 @@ data:
         bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
         relabel_configs:
         - source_labels: [__meta_kubernetes_namespace]
-          regex: prometheus
+          regex: istio-system
           action: keep
         - source_labels: [__meta_kubernetes_pod_label_app]
           regex: prometheus

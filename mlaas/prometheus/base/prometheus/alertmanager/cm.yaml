@@ -7,10 +7,10 @@ metadata:
     component: "alertmanager"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
+    chart: prometheus-14.12.0
     heritage: Helm
   name: prometheus-alertmanager
-  namespace: prometheus
+  namespace: istio-system
 data:
   alertmanager.yml: |
     global: {}

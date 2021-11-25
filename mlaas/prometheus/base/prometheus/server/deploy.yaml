@@ -7,10 +7,10 @@ metadata:
     component: "server"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
+    chart: prometheus-14.12.0
     heritage: Helm
   name: prometheus-server
-  namespace: prometheus
+  namespace: istio-system
 spec:
   selector:
     matchLabels:
@@ -24,7 +24,7 @@ spec:
         component: "server"
         app: prometheus
         release: prometheus
-        chart: prometheus-14.11.1
+        chart: prometheus-14.12.0
         heritage: Helm
     spec:
       enableServiceLinks: true
@@ -44,7 +44,7 @@ spec:
               readOnly: true
 
         - name: prometheus-server
-          image: "quay.io/prometheus/prometheus:v2.26.0"
+          image: "quay.io/prometheus/prometheus:v2.31.1"
           imagePullPolicy: "IfNotPresent"
           args:
             - --storage.tsdb.retention.time=15d
