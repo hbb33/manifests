@@ -13,7 +13,7 @@ resources:
 - charts/kube-state-metrics/templates/role.yaml
 - charts/kube-state-metrics/templates/service.yaml
 - charts/kube-state-metrics/templates/serviceaccount.yaml
-- namespace.yaml
+# - namespace.yaml
 - node-exporter/daemonset.yaml
 - node-exporter/serviceaccount.yaml
 - node-exporter/svc.yaml
