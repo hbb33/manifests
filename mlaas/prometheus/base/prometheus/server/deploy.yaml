@@ -83,10 +83,6 @@ spec:
             - name: storage-volume
               mountPath: /data
               subPath: ""
-      initContainers:
-           - name: prometheus-data-permission-fix
-             image: busybox
-             command: ["/bin/chmod","-R","777", "/data"]
       hostNetwork: false
       dnsPolicy: ClusterFirst
       securityContext:
