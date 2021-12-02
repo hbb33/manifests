@@ -91,6 +91,13 @@ spec:
         runAsNonRoot: true
         runAsUser: 65534
       terminationGracePeriodSeconds: 300
+      initContainers:
+      - name: prometheus-data-permission-fix
+        image: busybox
+        command: ["/bin/chmod","-R","777", "/data"]
+        volumeMounts:
+        - name: storage-volume
+          mountPath: /data
       volumes:
         - name: config-volume
           configMap:
