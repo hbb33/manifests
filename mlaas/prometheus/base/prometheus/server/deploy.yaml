@@ -93,8 +93,10 @@ spec:
       terminationGracePeriodSeconds: 300
       initContainers:
       - name: prometheus-data-permission-fix
-        image: busybox
+        image: busybox:latest
         command: ["/bin/chmod","-R","777", "/data"]
+        securityContext:
+        runAsUser: 0                                # Or you'll end up with Permission denied
         volumeMounts:
         - name: storage-volume
           mountPath: /data
