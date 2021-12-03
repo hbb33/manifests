@@ -37,7 +37,7 @@ data:
       openid: {}
       openshift:
         client_id_prefix: kiali
-      strategy: anonymous
+      strategy: "login"
     deployment:
       accessible_namespaces:
       - '**'
@@ -80,7 +80,7 @@ data:
       custom_dashboards:
         enabled: true
       prometheus:
-        url: http://prometheus.istio-system:9090
+        url: http://prometheus-server.istio-system:9090
     identity:
       cert_file: ""
       private_key_file: ""
