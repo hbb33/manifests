@@ -77,7 +77,7 @@ data:
       custom_dashboards:
         enabled: true
       prometheus:
-        url: http://prometheus-server.istio-system:9090
+        url: http://prometheus-server:9090
     identity:
       cert_file: ""
       private_key_file: ""
